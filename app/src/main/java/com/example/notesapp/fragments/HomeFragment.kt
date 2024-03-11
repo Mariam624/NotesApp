@@ -45,9 +45,10 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
         menuHost.addMenuProvider(this, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
         notesViewModel = (activity as MainActivity).noteViewModel
+
         setupHomeRecyclerView()
         binding.addNoteFab.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_editNoteFragment)
+            it.findNavController().navigate(R.id.action_homeFragment_to_addNoteFragment)
         }
     }
 
