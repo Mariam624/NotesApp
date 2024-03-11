@@ -34,9 +34,9 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/emptyNotesImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/emptyNotesImage"
             android:visibility="gone"
             android:src="@drawable/pictures"/>
 

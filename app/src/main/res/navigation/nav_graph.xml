@@ -9,18 +9,18 @@
         android:name="com.example.notesapp.fragments.HomeFragment"
         android:label="HomeFragment" >
         <action
-            android:id="@+id/action_homeFragment_to_addNoteFragment2"
-            app:destination="@id/addNoteFragment2" />
+            android:id="@+id/action_homeFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
         <action
             android:id="@+id/action_homeFragment_to_editNoteFragment"
             app:destination="@id/editNoteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/addNoteFragment2"
+        android:id="@+id/addNoteFragment"
         android:name="com.example.notesapp.fragments.AddNoteFragment"
         android:label="AddNoteFragment" >
         <action
-            android:id="@+id/action_addNoteFragment2_to_homeFragment"
+            android:id="@+id/action_addNoteFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
@@ -30,6 +30,7 @@
         <action
             android:id="@+id/action_editNoteFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+
         <argument
             android:name="note"
             app:argType="com.example.notesapp.model.Note"
