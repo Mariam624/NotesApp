@@ -1,5 +1,4 @@
 package com.example.notesapp.fragments
-
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -69,7 +68,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
         binding.homeRecyclerView.apply {
             layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
             setHasFixedSize(true)
-            adapter = NoteAdapter()
+            adapter = noteAdapter
         }
         activity?.let {
             notesViewModel.getAllNotes().observe(viewLifecycleOwner) { note ->
