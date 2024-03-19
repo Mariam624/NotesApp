@@ -68,4 +68,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
     // Annotation processor
     ksp("androidx.lifecycle:lifecycle-compiler:$lifecycleVersion")
+    // Splash Screen
+    implementation("androidx.core:core-splashscreen:1.1.0-alpha02")
 }

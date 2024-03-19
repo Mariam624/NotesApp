@@ -2,6 +2,7 @@ package com.example.notesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.ViewModelProvider
 import com.example.notesapp.database.NoteDatabase
 import com.example.notesapp.repository.NoteRepository
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var noteViewModel: NoteViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Thread.sleep(3000)
+        installSplashScreen()
         setContentView(R.layout.activity_main)
         setupViewModel()
     }
